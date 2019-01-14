@@ -64,10 +64,27 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
+  max-width: 1024px;
   /* TB LR */
   margin-left: 3%;
   margin-top: .3%;
+}
+
+@media(max-width: 800px) {
+	.container {
+		width: 800px;
+		margin: 0 auto;
+		background: pink;
+	}
+	header {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+	.ctaImage {
+		visibility: hidden;
+	}
 }
 
 /* header */
