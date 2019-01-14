@@ -82,9 +82,16 @@ h1, h2, h3, h4, h5 {
 		flex-wrap: wrap-reverse;
 		justify-content: center;
 	}
-	.ctaImage {
-		visibility: hidden;
+	.cta {
+		display: flex;
+		justify-content: center;
 	}
+	.ctaImage {
+		position: absolute;
+  		opacity: 0;
+  		pointer-events: none;
+	}
+	
 }
 
 /* header */
