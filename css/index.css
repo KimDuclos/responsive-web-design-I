@@ -10,170 +10,182 @@ del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, lab/* http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
- margin: 0;
- padding: 0;
- border: 0;
- font-size: 100%;
- font: inherit;
- vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
- display: block;
+	display: block;
 }
 body {
- line-height: 1;
+	line-height: 1;
 }
 ol, ul {
- list-style: none;
+	list-style: none;
 }
 blockquote, q {
- quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
- content: '';
- content: none;
+	content: '';
+	content: none;
 }
 table {
- border-collapse: collapse;
- border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+/* Set every element's box-sizing to border-box */
 * {
- box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body {
- height: 100%;
- font-family: 'Roboto', sans-serif;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
- font-size: 18px;
- margin-bottom: 15px;
- font-family: 'Rubik', sans-serif;
-}
-
-p {
- line-height: 1.4;
-}
-
-/************************MY CODE**********************************************/
-
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: baseline;
-    width: 95%;
-    height: 75px;
-    margin-top: 15px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
-nav a {
-    font-size: 14px;
-    color: black;
+.container {
+  width: 880px;
+  /* TB LR */
+  margin-left: 3%;
+  margin-top: .3%;
 }
 
-a:link {
-    text-decoration: none;
-    color: black;
+/* header */
+
+header nav {
+  display: inline-block;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
 }
 
-.about {
-    border-bottom: 1px dashed black;
-    height: 115px;
-    margin-top: 15px;
+header nav a {
+  display: inline-block;
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+/* cta */
+
+.cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: inline-block;
+  margin-top: 69px;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 50px;
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
 }
 
-.info-box {
-    border-bottom: 1px dashed black;
-    width: 370px;
-    padding-bottom: 25px;
-    padding-top: 20px;
+.main-content .top-content {
+  padding: 0 10px;
 }
 
-.learn {
-    border: 2px solid black;
-    width: 125px;
-    height: 40px;    
-    border-radius: 8px;
-    text-align: center;
-    padding-top: 2%;
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
 }
 
-.box-content {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
 }
 
-.bottom-title {
-    margin-bottom: 25px;
-    margin-top: 10px;
+.main-content .middle-img {
+  margin-top: 45px;
 }
 
-.bottom-paragraph {
-    margin-bottom: 20px;
-    line-height: 20px;
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
 }
 
 footer {
-    width: 100%;
-    background: black;
-    margin-top: 40px;
-}
-
-footer nav {
-    width: 60%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    padding: 20px 2%;
-    font-size: 14px;
-}
-
-footer nav a {
-    color: white;
-    text-decoration: none;
-}
-
-footer nav a:link {
-    text-decoration: none;
-    color: white;
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
 }
