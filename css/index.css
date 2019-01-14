@@ -105,6 +105,65 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
+
+@media(max-width: 500px) {
+	.container {
+		width: 500px;
+		margin: 0 auto;
+		border-bottom: 1px solid black;
+	}
+	header {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	nav a:link {	
+		font-size: 20px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		border-top: .5px solid black;
+		border-bottom: .5px solid black;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.cta {
+		display: flex;
+		justify-content: center;
+	}
+	.ctaImage {
+		position: absolute;
+  		opacity: 0;
+  		pointer-events: none;
+	}
+	.top-content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+	}
+	.top-content .text-content {
+		padding-bottom: 20px;
+	}
+	.middle-img {
+		width: 100%;
+	}
+	.bottom-content {
+		widows: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.bottom-content .text-content {
+		padding-bottom: 10px;
+	}
+}
+
 /* header */
 
 header nav {
