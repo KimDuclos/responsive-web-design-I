@@ -137,7 +137,8 @@ header .logo {
 .main-content {
   border-top: 1px solid black;
   margin-top: 76px;
-  padding-top: 39px;
+	padding-top: 39px;
+	padding-left: 5%;
 }
 
 .main-content .top-content {
@@ -176,7 +177,8 @@ header .logo {
 .contact {
   margin-top: 57px;
   border-top: 1px solid black;
-  padding: 39px 10px 0;
+	padding: 39px 10px 0;
+	padding-left: 5%;
 }
 
 .contact p {
