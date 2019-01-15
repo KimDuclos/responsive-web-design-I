@@ -183,7 +183,6 @@ nav a {
 	.container {
 		width: 800px;
 		margin: 0 auto;
-		background: pink;
 	}
 	header {
 		width: 100%;
@@ -231,16 +230,21 @@ nav a {
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
-	.main-content {
-		background: green;
+	.services {
 		height: auto;
+	}
+	.services-content {
+		padding-bottom: 15px;
+	}
+	.main-content {
+		height: auto;
+		margin-top: 20px;
 		display: flex;
 		justify-content: center;
 	}
 	.main-content .infoBox {
 		margin-bottom: 20px;
 	}
-
 	.facts {
 		display: flex;
 		flex-direction: column;
