@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 .container {
 	display: flex;
 	flex-direction: column;
-	width: 800px;
+	width: 1000px;
 	margin: auto;
 }
 
@@ -191,6 +191,14 @@ nav a {
 		flex-wrap: wrap-reverse;
 		justify-content: center;
 	}
+	nav {
+		width: 100%;
+	}
+	nav a:link{
+	}
+	.logo {
+		padding-bottom: 20px;
+	}
 }
 
 
@@ -211,6 +219,7 @@ nav a {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
+		padding-bottom: 20px;
 	}
 	nav a:link {	
 		font-size: 20px;
@@ -221,4 +230,18 @@ nav a {
 		border-bottom: .5px solid black;
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+	.main-content {
+		background: green;
+		height: auto;
+		display: flex;
+		justify-content: center;
+	}
+	.main-content .infoBox {
+		margin-bottom: 20px;
+	}
+
+	.facts {
+		display: flex;
+		flex-direction: column;
 	}
