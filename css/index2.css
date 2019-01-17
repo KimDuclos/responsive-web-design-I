@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  max-width: 1000px;
+  width: 1000px;
   /* TB LR */
   margin: auto;
 }
@@ -80,7 +80,7 @@ header nav {
 
 header nav a {
   display: inline-block;
-  margin-left: 5%;
+  margin-right: 65px;
   font-size: 14px;
   color: gray;
   text-decoration: none;
@@ -130,14 +130,14 @@ header .logo {
 }
 
 .cta img {
+  display: inline-block;
   margin-top: 69px;
 }
 
 .main-content {
   border-top: 1px solid black;
   margin-top: 76px;
-	padding-top: 39px;
-	padding-left: 5%;
+  padding-top: 39px;
 }
 
 .main-content .top-content {
@@ -164,7 +164,7 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-  width: 30%;
+  width: 275px;
   display: inline-block;
   margin-right: 12px;
 }
@@ -176,8 +176,7 @@ header .logo {
 .contact {
   margin-top: 57px;
   border-top: 1px solid black;
-	padding: 39px 10px 0;
-	padding-left: 5%;
+  padding: 39px 10px 0;
 }
 
 .contact p {
@@ -192,10 +191,74 @@ footer {
 
 
 /***********tablet edits****************************************/
-@media(max-width: 800px) {
-	.container {
-		width: 800px;
+@media(min-width: 800px){
+	.container{
+		width: 500px;
 		margin: 0 auto;
+	}
+
+	header {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	nav a:link {	
+		font-size: 20px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		border-top: .5px solid black; 
+		border-bottom: .5px solid black;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.cta {
+		display: flex;
+		justify-content: center;
+	}
+	.ctaImage {
+		position: absolute;
+  		opacity: 0;
+  		pointer-events: none;
+	}
+	.top-content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+	}
+	.top-content .text-content {
+		padding-bottom: 20px;
+	}
+	.middle-img {
+		width: 100%;
+	}
+	.bottom-content {
+		widows: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.bottom-content .text-content {
+		padding-bottom: 10px;
+		display: flex;
+	}
+}
+
+}
+
+/******mobile edits***************************************/
+@media(min-width: 800px) {
+	.container {
+		width: 500px;
+		margin: 0 auto;
+		border-bottom: 1px solid black;
 	}
 	header {
 		width: 100%;
@@ -226,111 +289,5 @@ footer {
 	}
 	.main-content .bottom-content .text-content {
 		width: 100%;
-	}
-}
-
-
-
-/******mobile edits***************************************/
-@media(max-width: 500px) {
-	
-	.container {
-		max-width: 100%;
-		padding-right: 4%;
-	}
-	header {
-		max-width: 100%;
-		display: flex;
-		flex-wrap: wrap-reverse;
-		justify-content: center;
-	}
-	nav {
-		max-width: 100%;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		padding-right: 0px;
-	}
-	nav .contact {
-		max-width: 100%;
-	}
-
-	nav a {
-		max-width: 100%;
-		padding-right: 0px;
-	}
-	nav a:link {	
-		font-size: 20px;
-		max-width: 100%;
-		display: flex;
-		justify-content: center;
-		border-top: .5px solid black; 
-		border-bottom: .5px solid black;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	nav a :last-child {
-		text-align: center;
-		width: 55%
-		
-	}
-
-	.logo {
-		width: 60vw;
-		padding-right: 10%;
-	}
-
-	.cta {
-		display: flex;
-		justify-content: center;
-		align-content: center;
-		max-width: 100%;
-	}
-
-.cta-text {
-		max-width: 100%;
-		text-align: center;
-	}
-
-.cta-text h1 {
-	height: auto;
-	width: auto;
-	font-size: 10vw;
-
-}
-
-button {
-	display: none;
-}
-
-	.ctaImage {
-		max-width: 100%;
-		position: absolute;
-  	opacity: 0;
-  	pointer-events: none;
-	}
-	.top-content {
-		max-width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-content: space-between;
-	}
-	.top-content .text-content {
-		max-width: 100%;
-		padding-bottom: 20px;
-	}
-	.middle-img {
-		max-width: 100%;
-	}
-	.bottom-content {
-		max-width: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-	.bottom-content .text-content {
-		max-width: 100%;
-		padding-bottom: 10px;
-		display: flex;
 	}
 }
